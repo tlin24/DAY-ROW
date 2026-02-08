@@ -100,8 +100,72 @@ input:hover, input:focus {
   TEXT ELEMENTS -------------------
 */
 
+/* Service cards styling */
+.service-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #f9f9f9;
+}
 
+.service-card h4 {
+  margin-top: 0;
+}
 
+.service-card a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-card a:hover {
+  text-decoration: underline;
+  color: #0052a3;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table tr:first-child {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Select and textarea styling */
+select, textarea {
+  background: #fff;
+  border: 1px solid #c6c7cc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  color: #636466;
+  padding: 6px;
+  margin-top: 6px;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+select:hover, select:focus,
+textarea:hover, textarea:focus {
+  color: rgb(0,0,255);
+}
+
+/* Form styling */
+form {
+  margin-top: 1rem;
+}
 
 /* 
   COMBINED ELEMENTS -------------------
