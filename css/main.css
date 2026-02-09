@@ -33,12 +33,12 @@ h4 {
 }
 
 p {
-  font-family: 'Simplon Mono', sans-serif;
+  font-family: 'Bodoni', serif;
   font-style: normal;
   margin-top: 0;
   line-height: 2;
   max-width: 50rem; 
-  color:#A62C2C;
+  color:#1a2054;
 }
 
 
@@ -72,7 +72,7 @@ ol {
 
 .order-title {
   margin-left: 10px;
-  font-family: 'NeueMontreal', sans-serif;
+  font-family: 'NeueMontreal', serif;
   font-weight: bold;
   font-style: normal;
   color:#A62C2C
@@ -128,20 +128,22 @@ label, input {
 }
 
 
-.montreal-font {
-  font-family: "NeueMontreal", sans-serif;
+.bodoni-font {
+  font-family: "Bodoni", serif;
   font-style: normal;
+  font-size: 2.5rem;
 }
 
-.simplon-font {
-  font-family: "Simplon Mono", sans-serif;
+.grotesk-font {
+  font-family: "Grotesk55", sans-serif;
   font-style: normal;
+  font-size: 2.5rem;
 }
 
 .color-palette {
   font-family: "NeueMontreal", sans-serif;
   font-style: normal;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 /*checkout cart*/
