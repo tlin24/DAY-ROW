@@ -37,12 +37,58 @@
         </ul>
       </section>
 
+      <h4>HTML:</h4>
+      <pre><code>
+      &lt;section id="content_requirements">
+      &lt;h2>Company Updates &amp; Events&lt;/h2>
+
+      &lt;section id="updates">
+        &lt;ul>
+          &lt;li>&lt;strong>Feb 14:&lt;/strong> Valentine's Special&lt;/li>
+          &lt;li>&lt;strong>Mar 01:&lt;/strong> New spicy recipe test&lt;/li>
+          &lt;li>&lt;strong>Ongoing:&lt;/strong> Follow social channels for daily offers.&lt;/li>
+        &lt;/ul>
+      &lt;/section>
+      </code></pre>
+
+      <h4>CSS:</h4>
+      <pre><code>
+      #content_requirements li {
+        border: 2px solid #003A6B;
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 6px;
+        font-family: 'Simplon Mono', sans-serif;
+        color: #003A6B;
+      }
+      </code></pre>
+
       <h2>About The Company</h2>
       <section id="about">
         <p>
           DAY ROW, A cafe in Itaewon, one of the most minimal aesthetic cafe's for people who enjoy a quiet premise with delicious cofee and pastries.
         </p>
       </section>
+
+      <h4>HTML:</h4>
+      <pre><code>
+      &lt;section id="about">
+        &lt;p>
+          DAY ROW, A cafe in Itaewon, one of the most minimal aesthetic cafe's for people who enjoy a quiet premise with delicious cofee and pastries.
+        &lt;/p>
+      </code></pre>
+
+      <h4>CSS:</h4>
+      <pre><code>
+        p {
+          font-family: 'Simplon Mono', sans-serif;
+          margin-top: 0;
+          line-height: 2;
+          max-width: 45rem;
+          color: #003A6B;
+        }
+      </code></pre>
 
       <h2>Contact</h2>
       <section id="contact">
@@ -67,6 +113,56 @@
         </form>
       </section>
 
+      <h4>HTML:</h4>
+      <pre><code>
+      &lt;section id="contact">
+        &lt;h3>Contact us!&lt;/h3>
+        &lt;p>
+          14-3 Itaewon-ro 49-gil, Seoul, South Korea&lt;br>
+          Phone: &lt;a href="tel:+16045551234">(604) 555-1234&lt;/a>&lt;br>
+          Email: &lt;a href="mailto:info@lachicken.example">info@lachicken.example&lt;/a>
+        &lt;/p>
+
+        &lt;form id="contact-form">
+          &lt;label for="contact-name">Name&lt;/label>
+          &lt;input id="contact-name" name="name" type="text" />
+
+          &lt;label for="contact-email">Email&lt;/label>
+          &lt;input id="contact-email" name="email" type="email" />
+
+          &lt;label for="contact-message">Message&lt;/label>
+          &lt;textarea id="contact-message" name="message">&lt;/textarea>
+
+          &lt;button class="btn" type="submit">Send&lt;/button>
+        &lt;/form>
+      &lt;/section>
+      </code></pre>
+
+      <h4>CSS:</h4>
+      <pre><code>
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+          width: 100%;
+          font-family: 'Simplon Mono', sans-serif;
+          color: #003A6B;
+          border: 2px solid #003A6B;
+          background: transparent;
+          border-radius: 6px;
+          margin-bottom: 1.5rem;
+        }
+
+        /* inputs + select */
+        input[type="text"],
+        input[type="email"],
+        select {
+          background-color: #fff;
+          height: 44px;
+          padding: 0.6rem 0.75rem;
+        }
+      </code></pre>
+
       <h2>Products &amp; Services (Listing)</h2>
       <section id="products">
         <h3>Our Products!</h3>
@@ -89,6 +185,95 @@
         </div>
       </section>
 
+      <h4>HTML:</h4>
+      <pre><code>
+      &lt;h2>Products &amp; Services (Listing)&lt;/h2>
+      &lt;section id="products">
+        &lt;h3>Our Products!&lt;/h3>
+        <!-- Product card -->
+        &lt;div class="product-page">
+
+          &lt;div class="product-card">
+            &lt;h3>Colombia Coffee&lt;/h3>
+            &lt;img src="img/coffee.jpg" alt="Coffee">
+            &lt;p>&lt;strong>$8&lt;/strong>&lt;/p>
+            &lt;a href="#">Add to cart&lt;/a>
+          &lt;/div>
+
+          &lt;div class="product-card">
+            &lt;h3>Colombia Decaf&lt;/h3>
+            &lt;img src="img/coffee.jpg" alt="Coffee">
+            &lt;p>&lt;strong>$10&lt;/strong>&lt;/p>
+            &lt;a href="#">Add to cart&lt;/a>
+          &lt;/div>
+        &lt;/div>
+      &lt;/section>
+      </code></pre>
+
+      <h4>CSS:</h4>
+      <pre><code>
+        .product-card {
+          width: 240px;
+          padding: 1.5rem;
+
+          border: 2px solid #003A6B;
+          border-radius: 14px;
+          background-color: #fff;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        /* Product images */
+        .product-card img {
+          width: 190px;
+          height: 140px;
+          object-fit: cover;
+          border-radius: 8px;
+          margin: 0.75rem 0;
+        }
+
+        /* Product text */
+        .product-card h3 {
+          margin-top: 0;
+          margin-bottom: 0.25rem;
+          text-align: center;
+        }
+
+        .product-card p {
+          margin: 0.25rem 0;
+          text-align: center;
+        }
+
+        /* Button */
+        .product-card a {
+          margin-top: auto;
+          display: inline-block;
+
+          padding: 0.6rem 1.4rem;
+          border: 2px solid #003A6B;
+          background-color: #fff;
+
+          color: #003A6B;
+          font-family: 'NeueMontreal', sans-serif;
+          font-weight: 600;
+          text-decoration: none;
+
+          border-radius: 999px;
+          cursor: pointer;
+
+          transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .product-card a:hover,
+        .product-card a:focus {
+          background-color: #003A6B;
+          color: #fff;
+          transform: scale(1.05);
+        }
+      </code></pre>
+
       <h2>Detailed Product</h2>
       <section id="Columbia Coffee">
         <h3 id="detailedProduct">Columbian Coffee</h3>
@@ -99,6 +284,49 @@
         <p><strong>Addons:</strong> Bourbon, Honey.</p>
         <button class="btn" onclick="location.href='checkout.html'">Buy Now</button>
       </section>
+      <h4>HTML:</h4>
+      <pre><code>
+      &lt;section id="Columbia Coffee">
+         &lt;h3 id="detailedProduct">Columbian Coffee &lt;/h3>
+         &lt;img src="img/coffee.jpg" alt="Coffee">
+         &lt;p>
+          Betania coffee with beans straight from Colombia
+         &lt;/p>
+         &lt;p> &lt;strong>Addons: &lt;/strong> Bourbon, Honey. &lt;/p>
+         &lt;button class="btn" onclick="location.href='checkout.html'">Buy Now &lt;/button>
+       &lt;/section>
+      </code></pre>
+
+      <h4>CSS:</h4>
+      <pre><code>
+      .btn {
+        font-family: 'NeueMontreal', sans-serif;
+        font-size: large;
+        padding: 15px 45px;
+        border: 3px solid #003A6B;
+        background: none;
+        color: #003A6B;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        background-color: #fff;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+        background-color: #fff;
+      }
+
+      /* Forms */
+
+      label {
+        display: block;
+        font-family: 'NeueMontreal', sans-serif;
+        font-weight: bold;
+        color: #003A6B;
+        margin-bottom: 0.4rem;
+      }
+      </code></pre>
 
       <section id="purchase-process">
         <h3>How to Purchase</h3>
@@ -110,6 +338,30 @@
         </ol>
         <p>See <a href="checkout.html">Checkout Template</a> for the payment form.</p>
       </section>
+
+      <h4>HTML:</h4>
+      <pre><code>
+      &lt;section id="purchase-process">
+        &lt;h3>How to Purchase&lt;/h3>
+        &lt;ol>
+          &lt;li>Choose a product from the listing or product page.&lt;/li>
+          &lt;li>Click "Buy Now" to add the item to the cart.&lt;/li>
+          &lt;li>Review your order on the checkout page and enter payment details.&lt;/li>
+          &lt;li>Confirm purchase; you'll receive an order confirmation and ETA.&lt;/li>
+        &lt;/ol>
+        &lt;p>See &lt;a href="checkout.html">Checkout Template&lt;/a> for the payment form.&lt;/p>
+      &lt;/section>
+      </code></pre>
+
+      <h4>CSS:</h4>
+      <pre><code>
+      #content_requirements ul,
+      #content_requirements ol {
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+      }
+      </code></pre>
 
       <h2>Feedback</h2>
       <section id="feedback">
@@ -133,6 +385,54 @@
       </section>
     </section>
 
+    <h4>HTML:</h4>
+    <pre><code>
+    &lt;section id="feedback">
+
+        &lt;form id="feedback-form">
+          &lt;h3>Please Rate Us!&lt;/h3>
+          &lt;label for="rating">Rating&lt;/label>
+          &lt;select id="rating" name="rating">
+            &lt;option value="5">5 — Excellent&lt;/option>
+            &lt;option value="4">4 — Good&lt;/option>
+            &lt;option value="3">3 — Okay&lt;/option>
+            &lt;option value="2">2 — Poor&lt;/option>
+            &lt;option value="1">1 — Very Poor&lt;/option>
+          &lt;/select>
+
+          &lt;label for="feedback-comments">Comments&lt;/label>
+          &lt;textarea id="feedback-comments" name="comments">&lt;/textarea>
+
+          &lt;button class="btn" type="submit">Submit Feedback&lt;/button>
+        &lt;/form>
+      &lt;/section>
+    &lt;/section>
+    </code></pre>
+
+    <h4>CSS:</h4>
+    <pre><code>
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      font-family: 'Simplon Mono', sans-serif;
+      color: #003A6B;
+      border: 2px solid #003A6B;
+      background: transparent;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+    }
+
+    /* inputs + select */
+    input[type="text"],
+    input[type="email"],
+    select {
+      background-color: #fff;
+      height: 44px;
+      padding: 0.6rem 0.75rem;
+    }
+    </code></pre>
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
