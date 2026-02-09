@@ -40,17 +40,3 @@
 	font-style: normal;
     src: url(../fonts/Simplon\ Mono.ttf) format('truetype');
 }
-
-@font-face {
-    font-family: "Bodoni";
-    font-weight: normal;
-	font-style: normal;
-    src: url(../fonts/bodoni_[allfont.net].ttf) format('truetype');
-}
-
-@font-face {
-    font-family: "Grotesk55";
-    font-weight: normal;
-	font-style: normal;
-    src: url(../fonts/neuehaasgrotdisp-55roman-trial.otf) format('truetype');
-}

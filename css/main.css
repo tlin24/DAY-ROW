@@ -28,20 +28,62 @@ h3 {
   margin-top: 1rem;
 }
 
+.example {
+  font-style: normal;
+  color:#1a2054;
+}
+
 h4 {
   margin-bottom: 0.5rem;
 }
 
 p {
-  font-family: 'Simplon Mono', sans-serif;
-  margin-top: 0;
+  font-family: 'Simplon Mono', serif;
+  font-style: normal;
   line-height: 2;
-  max-width: 50rem;
-  color: #003A6B;
+  max-width: 45rem; 
+  color:#1a2054;
+}
+
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
 }
 
 ol {
-  color: #003A6B;
+  color:#003A6B
+}
+
+/* checkout cart */
+
+.checkout-container {
+  max-width: 400px;
+  border: 2px solid #A62C2C;
+  border-radius: 4px;
+  background-color: #FAF2E6;
+}
+
+.checkout-items {
+  margin-left: 10px;
+  margin-bottom: 2rem;
+}
+
+.order-title {
+  margin-left: 10px;
+  font-family: 'NeueMontreal', serif;
+  font-weight: bold;
+  font-style: normal;
+  color:#A62C2C
+}
+
+.order-total {
+  text-decoration: underline;
 }
 
 a {
@@ -86,7 +128,48 @@ a:hover {
   margin-bottom: 1rem;
   border-radius: 6px;
   font-family: 'Simplon Mono', sans-serif;
-  color: #003A6B;
+}
+
+
+.montreal-font {
+  font-family: "NeueMontreal", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+.simplon-font {
+  font-family: "Simplon Mono", sans-serif;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+.color-palette {
+  font-family: "NeueMontreal", sans-serif;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+/*checkout cart*/
+
+.order-total {
+  margin-top: 5rem;
+}
+
+/* web examples */
+.example-web {
+  max-width: 50vw;
+}
+
+/*intext link*/
+
+a {
+  color:#1a2054;
+}
+
+a:hover, a:focus{
+  color: #000000;
+  text-decoration: none;
 }
 
 /* -------------------------------
@@ -106,7 +189,16 @@ a:hover {
 }
 
 .navbar ul li a {
-  font-weight: bold;
+  color:#1a2054;
+  font-family: 'NeueMontreal', sans-serif;
+  font-weight: bold; 
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.navbar ul li a:hover {
+  color:#000000;
+  transition: .3s;
 }
 
 /* -------------------------------
@@ -117,18 +209,31 @@ a:hover {
   font-family: 'NeueMontreal', sans-serif;
   font-size: large;
   padding: 15px 45px;
-  border: 3px solid #003A6B;
+  border: 3px solid #1a2054;
   background: none;
-  color: #003A6B;
+  outline: none;
+  color: #1a2054;
+  position: relative;
+  z-index: 0;
   border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  background-color: #fff;
+  background-color: #b4b4b4;
+}
+
+/*customer form */
+.order-detail {
+  color:#1a2054;
+  font-family: 'NeueMontreal', sans-serif;
+  font-weight: bold;
+}
+
+.form-box{
+  min-width: 500px;
+  margin: 0 auto;
 }
 
 /* -------------------------------
@@ -145,8 +250,12 @@ label {
   display: block;
   font-family: 'NeueMontreal', sans-serif;
   font-weight: bold;
-  color: #003A6B;
-  margin-bottom: 0.4rem;
+  color:#1a2054;
+  margin-bottom: 5rem;
+}
+
+input {
+  font-family: 'Simplon Mono', sans-serif;
 }
 
 /* all form fields */
@@ -159,8 +268,9 @@ textarea {
   color: #003A6B;
   border: 2px solid #003A6B;
   background: transparent;
-  border-radius: 6px;
-  margin-bottom: 1.5rem;
+  border: 0;
+  border-bottom: 2px solid #1a2054;
+  outline: none;
 }
 
 /* inputs + select */
@@ -182,12 +292,11 @@ textarea {
   background-color: #fff;
 }
 
-/* focus state */
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  background-color: #fff;
+.payment-title {
+  color: #1a2054;
+  font-family: 'NeueMontreal', sans-serif;
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* -------------------------------
@@ -202,8 +311,11 @@ textarea:focus {
   border: 2px solid #003A6B;
 }
 
-#feedback-form h3 {
-  margin-bottom: 3rem;
+.meal-option {
+  margin-left: 10px;
+  font-family: 'NeueMontreal', sans-serif;
+  font-weight: bold;
+  color:#1a2054
 }
 
 /* -------------------------------
@@ -228,22 +340,25 @@ textarea:focus {
   transition: transform 0.3s ease;
 }
 
-.hero-img:hover {
-  transform: scale(1.05);
+label span:hover,
+input[type="radio"]:checked + span{
+  background-color: #b4b4b4;
 }
 
-.product-page {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 1.5rem;
-  flex-wrap: wrap; 
+label span:before{
+  content: "";
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
+  margin-right: 10px;
+  transition: .25s ease;
+  box-shadow:  inset 0 0 0 2px #1a2054;
 }
 
-/* Product card */
-.product-card {
-  width: 240px;
-  padding: 1.5rem;
+input[type="radio"]:checked + span:before{
+  box-shadow: inset 0 0 0 10px #1a2054;
+}
 
   border: 2px solid #003A6B;
   border-radius: 14px;
