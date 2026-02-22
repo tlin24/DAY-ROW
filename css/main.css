@@ -284,6 +284,36 @@ textarea:focus {
   padding: 1.5rem;
 }
 
+/* Layout for checkout page: keep order and payment centered and responsive */
+.checkout-layout {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* make the two columns exact side-by-side */
+.checkout-layout > .checkout-container,
+.checkout-layout > .payment-container {
+  flex: 0 0 48%;
+  max-width: 500px;
+}
+
+/* stack on small screens */
+@media (max-width: 800px) {
+  .checkout-layout {
+    flex-wrap: wrap;
+  }
+  .checkout-layout > .checkout-container,
+  .checkout-layout > .payment-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 /* IMAGES */
 
 .hero-img {
@@ -426,12 +456,16 @@ input{
 
 .payment-container {
   max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   padding: 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .payment-box {
-  min-width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
 
 }
