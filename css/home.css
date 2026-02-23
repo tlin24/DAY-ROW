@@ -135,7 +135,7 @@ h1, h2 {
 
   border: 2px solid #003A6B;
   border-radius: 14px;
-  background-color: #fff;
+  background-color: #f2f0ef;
 
   display: flex;
   flex-direction: column;
@@ -170,7 +170,7 @@ h1, h2 {
 
   padding: 0.6rem 1.4rem;
   border: 2px solid #003A6B;
-  background-color: #fff;
+  background-color: #f2f0ef;
 
   color: #003A6B;
   font-family: 'NeueMontreal', sans-serif;
@@ -197,7 +197,7 @@ h1, h2 {
 
   border: 2px solid #003A6B;
   border-radius: 20px;
-  background-color: #fdfdfd;
+  background-color: #f2f0ef;
 }
 
 /* Center section titles */
@@ -238,13 +238,13 @@ h1, h2 {
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  background-color: #fff;
+  background-color: #f2f0ef;
   font-size: 1.1rem;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  background-color: #fff;
+  background-color: #f2f0ef;
 }
 
 .checkout-btn {
