@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORDER</title>
+  <link rel="icon" type="image/png" href="img/Chicken-logo.png" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/order.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="home.html#about">ABOUT</a></li>
+        <li><a href="home.html#products">MENU</a></li>
+        <li><a href="home.html#cx-signup">REWARDS</a></li>
+        <li><a href="#footer">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Select your order</h2>
+
+      <form action="checkout.html" method="get">
+        <div class="product-page">
+          <div class="product-card">
+            <h3>Colombia Coffee</h3>
+            <img src="img/coffee.jpg" alt="Coffee" />
+            <div class="price-row">
+              <p><strong>$8</strong></p>
+              <div class="qty-wrap">
+                <span class="qty-label">Qty</span>
+                <input class="qty-input" type="number" name="colombia_coffee_qty" min="0" value="0" />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <h3>Colombia Decaf</h3>
+            <img src="img/coffee.jpg" alt="Coffee" />
+            <div class="price-row">
+              <p><strong>$10</strong></p>
+              <div class="qty-wrap">
+                <span class="qty-label">Qty</span>
+                <input class="qty-input" type="number" name="colombia_decaf_qty" min="0" value="0" />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <h3>Flat White</h3>
+            <img src="img/coffee.jpg" alt="Coffee" />
+            <div class="price-row">
+              <p><strong>$8</strong></p>
+              <div class="qty-wrap">
+                <span class="qty-label">Qty</span>
+                <input class="qty-input" type="number" name="flat_white_qty" min="0" value="0" />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <h3>Americano</h3>
+            <img src="img/coffee.jpg" alt="Coffee" />
+            <div class="price-row">
+              <p><strong>$7</strong></p>
+              <div class="qty-wrap">
+                <span class="qty-label">Qty</span>
+                <input class="qty-input" type="number" name="americano_qty" min="0" value="0" />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <h3>Mocha</h3>
+            <img src="img/coffee.jpg" alt="Coffee" />
+            <div class="price-row">
+              <p><strong>$7</strong></p>
+              <div class="qty-wrap">
+                <span class="qty-label">Qty</span>
+                <input class="qty-input" type="number" name="mocha_qty" min="0" value="0" />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <h3>Espresso</h3>
+            <img src="img/coffee.jpg" alt="Coffee" />
+            <div class="price-row">
+              <p><strong>$7</strong></p>
+              <div class="qty-wrap">
+                <span class="qty-label">Qty</span>
+                <input class="qty-input" type="number" name="espresso_qty" min="0" value="0" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="checkout-btn">
+          <button class="btn" type="submit">Checkout</button>
+        </section>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <hr />
+    <p><strong>Address:</strong> 14-3 Itaewon-ro 49-gil, Seoul, South Korea</p>
+    <p><strong>Phone:</strong> (604) 555-1234</p>
+    <p><strong>Hours:</strong> 11am to 9pm</p>
+  </footer>
+</body>
+</html>
