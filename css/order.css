@@ -26,20 +26,22 @@ h1, h2, h3 {
   margin: 0;
 }
 
-/* NAVBAR */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
 
+/* shared navbar*/
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 0.75rem;
-}
-
-.navbar ul {
-  padding: 0;
-  margin: 0;
+  padding-top: 0.5rem;
 }
 
 .navbar ul li {
@@ -50,12 +52,13 @@ h1, h2, h3 {
 
 .navbar ul li a {
   position: relative;
-  color: #003A6B;
+  color: #003a6b;;
   font-family: "NeueMontreal", sans-serif;
+  font-style: normal;
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
 }
 
 .navbar ul li a::after {
@@ -87,8 +90,12 @@ main {
   padding-top: 2rem;
 }
 
-#products h2 {
+#products h1 {
   margin-bottom: 2rem;
+}
+
+#products {
+  margin-top: 6rem;
 }
 
 /* PRODUCT GRID */
@@ -205,8 +212,32 @@ main {
   background-color: #f2f0ef;
 }
 
-/* FOOTER */
-
+/*footer*/
 footer {
   margin-top: 9rem;
+}
+
+.footer-container {
+  margin: 0 auto;
+  margin: 2rem 2rem;
+}
+
+#logo-container {
+  text-align: start; 
+  margin-bottom: 2rem;
+  margin-left: -2rem;
+}
+
+.drc-logo {
+  width: 250px;      
+  height: auto; 
+  display:block     
+}
+
+.footer-container a,
+.footer-container a:visited,
+.footer-container a:active,
+.footer-container a:focus {
+  color: #003A6B;
+  text-decoration: underline;
 }
