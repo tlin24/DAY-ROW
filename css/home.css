@@ -261,3 +261,11 @@ footer {
   margin: 2rem 2rem;
 }
 
+.footer-container a,
+.footer-container a:visited,
+.footer-container a:active,
+.footer-container a:focus {
+  color: #003A6B;
+  text-decoration: underline;
+}
+
